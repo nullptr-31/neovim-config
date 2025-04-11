@@ -12,11 +12,6 @@ return {
         require("flutter-tools").setup({
             lsp = {
                 capabilities = require("cmp_nvim_lsp").default_capabilities(),
-
-                on_attach = function(client, bufnr)
-                    -- Optional: Add custom on_attach logic here
-                    -- This will run when the Flutter LSP attaches to a buffer
-                end,
             },
             -- Add any other flutter-tools options here
             debugger = {
